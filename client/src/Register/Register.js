@@ -147,8 +147,9 @@ handleNewImage = event => {
             value={this.state.food} onChange={this.handleInputChange} />
       
           <input type='file' onChange={this.handleNewImage} /> <br /><br />
+         <input type="submit"  value="Update Info" />
+
         </form>
-          <button type="submit" form="form1" value="Submit">Submit</button>
           </div>
                      {$imagePreview}
 
