@@ -9,3 +9,7 @@
 img {
 	size: auto;
 }
+
+.sender{
+cursor:'pointer';
+}

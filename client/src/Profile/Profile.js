@@ -185,7 +185,7 @@ class Profile extends Component {
         <input type='file' onChange={this.handleNewImage} /> <br /><br />
         
 
-        <input type="submit" value="Update Info" />
+        <input type="submit" class="sender" value="Update Info" />
       </form>
           </div>
           {$imagePreview}

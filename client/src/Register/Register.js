@@ -106,7 +106,7 @@ handleNewImage = event => {
        let {imagePreviewUrl} = this.state;
     let $imagePreview = null;
     if (imagePreviewUrl) {
-      $imagePreview = (<img src={imagePreviewUrl} />);
+      $imagePreview = (<img src={imagePreviewUrl} class="sizer" />);
     }
 
     return (
@@ -149,7 +149,7 @@ handleNewImage = event => {
         </label>
         </label>
           <input type='file' onChange={this.handleNewImage} /> <br /><br />
-           <input type="submit" value="Submit" />
+           <input class="sender" type="submit" value="Submit" />
         </form>
 
 
