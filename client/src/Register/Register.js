@@ -118,36 +118,34 @@ handleNewImage = event => {
           <h1>User Profile
           </h1>
       <form id="form1" onSubmit={(e)=>this.handleSubmit(e,this.state)}>
-        <label>
-        <label>
+ 
               <input type="text" placeholder="User Name" name="userName" value={this.state.userName} 
               onChange={this.handleInputChange}/>
-          </label>
+        
           <br />
-           <label>
+        
               <input type="text" placeholder="Occupation" name="occupation" value={this.state.occupation} 
               onChange={this.handleInputChange} />
-          </label>
+       
           <br />
-        <label>
+     
               <textarea name="aboutMe" placeholder="Tell us about you..." value={this.state.aboutMe} onChange={this.handleInputChange}></textarea>
-          </label>
+       
           <br />
-          <label>
+       
     <input type="text" placeholder="Hobbies" name="hobbies" value={this.state.hobbies}
     onChange={this.handleInputChange}/>
-  </label>
+ 
   <br />
-        <label>
+      
     <input type="text" placeholder="Favorite Music" name="music" value={this.state.music}
     onChange={this.handleInputChange}/>
-  </label>
+ 
         <br />
-        <label>
+    
             <input type="text" placeholder="Favorite Food" name="food"
             value={this.state.food} onChange={this.handleInputChange} />
-        </label>
-        </label>
+      
           <input type='file' onChange={this.handleNewImage} /> <br /><br />
         </form>
           <button type="submit" form="form1" value="Submit">Submit</button>
