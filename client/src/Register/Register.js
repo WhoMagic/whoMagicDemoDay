@@ -117,16 +117,16 @@ handleNewImage = event => {
           <div className="col-sm-6">
           <h1>User Profile
           </h1>
-      <form id="form1" onSubmit={(e)=>this.handleSubmit(e,this.state)}>
+  <form onSubmit={(e)=>this.handleSubmit(e,this.state)}>
         <label>
         <label>
-              <input type="text" placeholder="User Name" name="userName" value={this.state.userName} 
+              <input type="text" placeholder="User Name" name="userName"  value={this.state.userName} 
               onChange={this.handleInputChange}/>
           </label>
           <br />
            <label>
-              <input type="text" placeholder="Occupation" name="occupation" value={this.state.occupation} 
-              onChange={this.handleInputChange} />
+              <input type="text" placeholder="Occupation" name="occupation" value={this.state.title} 
+              onChange={this.handleInputChange}/>
           </label>
           <br />
         <label>
@@ -148,10 +148,11 @@ handleNewImage = event => {
             value={this.state.food} onChange={this.handleInputChange} />
         </label>
         </label>
-          <input type='file' onChange={this.handleNewImage} /> <br /><br />
-                  <input type="submit"  value="Submit" />
-
-        </form>
+        <label>
+                  <input type='file' onChange={this.handleNewImage} /> <br /><br />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
           </div>
                      {$imagePreview}
 
