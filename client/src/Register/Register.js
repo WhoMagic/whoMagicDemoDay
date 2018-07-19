@@ -117,7 +117,7 @@ handleNewImage = event => {
           <div className="col-sm-6">
           <h1>User Profile
           </h1>
-      <form onSubmit={(e)=>this.handleSubmit(e,this.state)}>
+      <form id="form1" onSubmit={(e)=>this.handleSubmit(e,this.state)}>
         <label>
         <label>
               <input type="text" placeholder="User Name" name="userName" value={this.state.userName} 
@@ -149,10 +149,8 @@ handleNewImage = event => {
         </label>
         </label>
           <input type='file' onChange={this.handleNewImage} /> <br /><br />
-           <input class="sender" type="submit" value="Submit" />
         </form>
-
-
+          <button type="submit" form="form1" value="Submit">Submit</button>
           </div>
                      {$imagePreview}
 
